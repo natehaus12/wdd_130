@@ -6,6 +6,7 @@
 nav a{
     color: #163c5e;
     text-align: center;
+    padding: 35px;
 }
 
 #hero-msg h1{
@@ -24,15 +25,26 @@ main section{
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
 }
 
 body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #84CAE7;
+}
+h2{
+    margin: 0;
 }
 
 header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #E9D81B;
 }
 
@@ -43,16 +55,25 @@ nav a:hover{
 }
 
 .book{
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
     text-decoration: none;
     background-color: #84CAE7;
     color: #163c5e;
 }
 
 .join{
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
     text-decoration: none;
     background-color: #84CAE7;
     color: #163c5e;
 }
+
 .book:hover{
     background-color: #E9D81B;
     color: #163c5e;
@@ -68,6 +89,7 @@ nav a:hover{
 }
 
 .msg{
+    padding: 35px;
     background-color: #84CAE7;
 }
 
@@ -76,6 +98,8 @@ footer{
 }
 
 .home-title{
+    margin-top: 10px;
+    font-size: 2em;
     color: #163c5e;
 }
 
@@ -84,11 +108,19 @@ h4{
 }
 
 .msg h2{
+    line-height: 1.5em;
     color: #163c5e;
 }
 
 .msg p{
+    padding-bottom: 15px;
+    font-size: .8em;
     color: #163c5e;
+}
+
+footer{
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer h3{
@@ -110,10 +142,36 @@ footer p {
     font-size: 1.2em;
 } 
 
+footer .social img{
+      padding-top: 15px;
+}
+
 .logo {
     width: 80px;
+}
+#logo_link{
+    padding-top: 5px;
 }
 
 #hero-img {
     width: 100%;
+}
+.icon{
+    padding-top: 10px;
+}
+
+.card-img {
+    border: 10px solid #000000;
+}
+
+.rivers-card{
+    margin: 200px 0;
+}
+
+.camping-card{
+    margin: 200px 0;
+}
+
+.rapids-card{
+    margin: 200px 0;
 }
