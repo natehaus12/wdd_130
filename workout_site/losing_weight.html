@@ -9,17 +9,22 @@
 </head>
 
 <body>
-<div id="content">
-    <header>
-     <a id="logo_link" href="index.html">
-        <img class="logo" src="images/workout_logo.png" alt="fitness logo">
-     </a>
-     <nav>
-        <a href="index.html">Home</a>
-        <a href="gaining_weight.html">Gaining Healthy Weight</a>
-        <a href="losing_weight.html">Losing Weight</a>
-    </nav>
-</header>
+    <div id="content">
+        <header>
+         <a id="logo_link" href="index.html">
+            <img class="logo" src="images/workout_logo.png" alt="fitness logo" height="150">
+         </a>
+    
+         <div class="dropdown">
+         <button onclick="myFunction()" class="dropbtn">Page Select</button>
+         <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="gaining_weight.html">Gaining Healthy Weight</a>
+            <a href="losing_weight.html">Losing Weight</a>
+        </div>
+        </div>
+    </header>
+    </div>
 <main class="losing-content">
     <img src="images/cut-1-bike.jpeg" alt="biking">
     
@@ -52,6 +57,26 @@
 
     </div>
 </footer>
-</div>
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>

@@ -2,20 +2,8 @@ header{
     height: 150px;
     font-family: serif;
     background-color: #385B9B;
-    display: grid;
-    grid-template-columns: 150px auto;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a{
-    color: #eeeeee;
-    text-align: center;
-    padding: 35px;
-}
 
 #photos {
     background-color: #7D7D7D ;
@@ -55,3 +43,51 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+
+/* dropdown button */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #7D7D7D;
+    color: white;
+    padding: 16px; 
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
