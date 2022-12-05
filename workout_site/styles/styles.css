@@ -29,6 +29,18 @@ header{
   margin-bottom: 40px;
 }
 
+.bulking-foods{
+  margin-top: 40px;
+  grid-column: 8/10;
+  margin-bottom: 40px;
+}
+
+.deadlift{
+  margin-top: 40px;
+  grid-column: 2/4;
+  margin-bottom: 40px;
+}
+
 .treadmill{
     margin-top: 40px;
     grid-column: 2/4;
